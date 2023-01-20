@@ -15,6 +15,9 @@
     left: 40px;
     top: 40px;
 }
+main {
+    width: 70%;
+}
 
 .text-area{
     position: absolute;
@@ -39,26 +42,78 @@
     outline: none;
 }
 
+.s-botones {
+    position: absolute;
+    left: 240px;
+    bottom: 40px;
+    width: 70%px;
+    margin: 0 auto;
+}
+.botones {
+    
+    width: 328px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    margin: 16px;
+
+}
+
+.advertencia {
+    position: absolute;
+
+    height: 18px;
+    left: 240px;
+   bottom: 156px;
+}
+.exclamacion {
+    display: inline-block;
+
+}
+
+.informacion {
+    display: inline-block;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+
+    /* Gray/gray-400 */
+
+    color: #495057;
+
+    opacity: 0.8;
+
+    /* Inside auto layout */
+
+}
+
 aside {
     position: absolute;
-    
+    width: 30%;
     left: 900px;
     top: 40px;
+    bottom: 30px;
+    background-color: white;
+    background-image: url("/imagenes/muñeco.png");
+    background-repeat: no-repeat;
     padding-right: 40px;
+    border: none;
+    border-radius: 32px;
+    
 }
 
 .mensaje {
-    background: white;
-    background-image: url("/imagenes/muñeco.png");
-    background-repeat: no-repeat;
+    
+    
     border: none;
-    border-radius: 32px;
+    
     color: #495057;
     margin-left: 98px;
     margin-top: 20px;
     padding: 20px;
-    width: 60%;
-    height: 500px;
+        height: 500px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -68,38 +123,10 @@ aside {
 }
 .mensaje:focus {
     outline: none;
-    background: white;
-
-}
-
-.botones {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-
-    position: absolute;
-    width: 680px;
-    height: 67px;
-    left: 240px;
-    bottom: 30px;
-
+    
 }
 
 .copiar{
-    box-sizing: border-box;
-    padding: 24px;
-    
     position: absolute;
-    width: 60%;
-    height: 67px;
-    
-    margin: 32px auto;
-
-    /* Dark blue/dark-blue-300 */
-
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    bottom: 30px;
+    bottom: 32px;
 }
