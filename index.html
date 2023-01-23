@@ -12,11 +12,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <img class="logo" src="imagenes/Logo.png" alt="Logo Alura">
+        <header>
+            <img class="logo" src="imagenes/Logo.png" alt="Logo Alura">
+        </header>
+
         <main>
             <section>
                 <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-                <div class="advertencia">
+                 <div class="advertencia">
                     <img class="exclamacion" src="imagenes/bi_exclamation-circle-fill.png" alt="Logo Alura">
                     <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
                 </div>
@@ -24,13 +27,17 @@
                     <button class="btn-encriptar botones">Encriptar</button>
                     <button class="btn-desencriptar botones">Desencriptar</button>
                 </div>
-            </section>
-        </main>
-        <aside>
-            <textarea class="mensaje" cols="20" rows="10" ></textarea>
-            <div>
+            </section>   
+    
+            <aside class="clearfix">
+                <textarea class="mensaje"></textarea>
                 <button class="copiar botones">Copiar</button>
-            </div>
-        </aside>
+            </aside>
+        </main>
+        
+        <footer>
+            <p class="pie-pagina">*Desarrollado por Diana Alcocer</p>
+        </footer>
+        <script src="/script.js"></script>
     </body>
 </html>

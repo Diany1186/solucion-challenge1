@@ -15,18 +15,20 @@
     left: 40px;
     top: 40px;
 }
-main {
-    width: 70%;
-}
 
-.text-area{
+section {
+    
     position: absolute;
+    top: 168px;
+    left: 240px;
+    bottom: 40px;
+    border: none;
+}
+.text-area{
+    
     width: 577px;
     height: 48px;
-    left: 240px;
-    top: 168px;
     border: none;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -34,37 +36,46 @@ main {
     line-height: 150%;
 }
 
-.textarea::placeholder {
+.text-area::placeholder {
     color: #0A3871;
 }
 
-.textarea:focus {
+.text-area:focus {
     outline: none;
+    background: none;
+    
 }
 
 .s-botones {
     position: absolute;
-    left: 240px;
     bottom: 40px;
-    width: 70%px;
+    width: 50%px;
     margin: 0 auto;
 }
 .botones {
-    
-    width: 328px;
+   
+    width: 250px;
     height: 67px;
     border: 1px solid #0A3871;
     border-radius: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
     margin: 16px;
+    /* Dark blue/dark-blue-300 */
 
+    color: #0A3871;
 }
 
 .advertencia {
     position: absolute;
 
     height: 18px;
-    left: 240px;
-   bottom: 156px;
+    left: 0;
+    bottom: 150px;
 }
 .exclamacion {
     display: inline-block;
@@ -77,56 +88,72 @@ main {
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
-    /* identical to box height, or 18px */
-
-    /* Gray/gray-400 */
-
     color: #495057;
-
     opacity: 0.8;
-
-    /* Inside auto layout */
-
-}
+ }
 
 aside {
     position: absolute;
-    width: 30%;
-    left: 900px;
-    top: 40px;
-    bottom: 30px;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 90%;
+    float: right;
+    margin: 40px;
     background-color: white;
-    background-image: url("/imagenes/muñeco.png");
-    background-repeat: no-repeat;
-    padding-right: 40px;
+    
+    padding-right: 10px;
     border: none;
     border-radius: 32px;
     
 }
 
+
 .mensaje {
     
-    
+    top: 10px;
+    display: block;
+    background: none;
+    background-image: url("imagenes/Muñeco.png");
+    background-repeat: no-repeat;   
     border: none;
-    
     color: #495057;
-    margin-left: 98px;
-    margin-top: 20px;
-    padding: 20px;
-        height: 500px;
+    padding: 10px;
+    height: 72%;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 150%;
+    margin: 10px auto;
 }
 .mensaje:focus {
     outline: none;
+    background: none;
     
 }
 
 .copiar{
+    display: block;
+    background-color: white;
+    margin: 30px auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.pie-pagina{
     position: absolute;
-    bottom: 32px;
+    bottom: 10px;
+    width: 100%;
+    display: block;
+    font-family: 'Inter';
+    font-size: 15px;
+    text-align: center;
+    margin: 20px;
+    color: #495057
 }
