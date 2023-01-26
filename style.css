@@ -105,7 +105,12 @@ aside {
     padding-right: 10px;
     border: none;
     border-radius: 32px;
-    
+
+    border: none;
+    color: #495057;
+    font-family: 'Inter';
+    margin: 10px auto;
+    text-align: center;
 }
 
 
@@ -115,23 +120,23 @@ aside {
     display: block;
     background: none;
     background-image: url("imagenes/Muñeco.png");
+    background-position: center;
     background-repeat: no-repeat;   
-    border: none;
-    color: #495057;
+    
     padding: 10px;
     height: 72%;
-
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 150%;
-    margin: 10px auto;
 }
+
 .mensaje:focus {
     outline: none;
-    background: none;
-    
+    background: none;   
+}
+
+.mensaje-oculto {
+
 }
 
 .copiar{

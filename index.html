@@ -25,12 +25,13 @@
                 </div>
                 <div class="s-botones">
                     <button class="btn-encriptar botones" onclick="btnEncriptar()">Encriptar</button>
-                    <button class="btn-desencriptar botones">Desencriptar</button>
+                    <button class="btn-desencriptar botones" onclick="btnDesncriptar()">Desencriptar</button>
                 </div>
             </section>   
     
             <aside class="clearfix">
-                <textarea class="mensaje"></textarea>
+                <textarea class="mensaje" disabled></textarea>
+                <p class="mensaje-oculto">Ningún texto fue encontrado</p>
                 <button class="copiar botones">Copiar</button>
             </aside>
         </main>
