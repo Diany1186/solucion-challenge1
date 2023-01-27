@@ -1,5 +1,8 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
+const mensajeOculto = document.querySelector(".m-sinTexto");
+const mensajeOculto2 = document.querySelector(".m-sugerencia");
+const btnCopiar = document.querySelector(".copiar");
 
 /*
 La letra "e" es convertida para "enter"
@@ -12,7 +15,11 @@ function btnEncriptar (){
     const textoEncriptado = encriptar(textArea.value);
     mensaje.value = textoEncriptado;
     textArea.value = "";
+    mensajeOculto.style.visibility = "hidden";
+    mensajeOculto2.style.visibility = "hidden";
     mensaje.style.backgroundImage = "none";
+    btnCopiar.style.visibility = "visible";
+    
 }
 
 function encriptar(stringEncriptado){
@@ -43,4 +50,10 @@ function desencriptar(stringDesencriptado){
         }
     }
     return stringDesencriptado;
-}  
+}
+
+function copiar (){
+        // Sleccionando el texto
+    mensaje.select();
+    //var copiado = document.ececComand
+}

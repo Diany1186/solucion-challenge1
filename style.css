@@ -26,7 +26,7 @@ section {
 }
 .text-area{
     
-    width: 577px;
+    width: 80%;
     height: 48px;
     border: none;
     font-family: 'Inter';
@@ -54,7 +54,7 @@ section {
 }
 .botones {
    
-    width: 250px;
+    width: 220px;
     height: 67px;
     border: 1px solid #0A3871;
     border-radius: 24px;
@@ -106,10 +106,9 @@ aside {
     border: none;
     border-radius: 32px;
 
-    border: none;
     color: #495057;
     font-family: 'Inter';
-    margin: 10px auto;
+    margin: 15px auto;
     text-align: center;
 }
 
@@ -122,12 +121,14 @@ aside {
     background-image: url("imagenes/Muñeco.png");
     background-position: center;
     background-repeat: no-repeat;   
+    border: none;
     
     padding: 10px;
-    height: 72%;
+    height: 62%;
     font-weight: 400;
     font-size: 24px;
     line-height: 150%;
+    margin: 10px auto;
 }
 
 .mensaje:focus {
@@ -135,12 +136,25 @@ aside {
     background: none;   
 }
 
-.mensaje-oculto {
-
+.m-sinTexto {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
 }
 
+.mensaje-oculto {
+    margin: 8px auto;
+    background-color: white;
+}
+
+.m-sugerencia {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
 .copiar{
     display: block;
+    visibility: hidden;
     background-color: white;
     margin: 30px auto;
 }
