@@ -11,15 +11,44 @@ La letra "a" es convertida para "ai"
 La letra "o" es convertida para "ober"
 La letra "u" es convertida para "ufat"
  */
-function btnEncriptar (){
-    const textoEncriptado = encriptar(textArea.value);
-    mensaje.value = textoEncriptado;
+
+function validarFormato() { //valida que haya texto ingresado y que coincida con el formato requerido
+    let texto = textArea.value;
+    if (texto != "") {//verifica que se haya ingresado texto
+        let validador = texto.match(/^[a-z]*$/);
+
+        if (!validador || validador === 0) {//valida que no haya acentos o 
+            alert("Solo son permitidas letras minúsculas y sin acentos, por favor corrija el texto ingresado");
+            return true;
+        }
+    } else {
+        mostrarMensajeOculto();
+        alert("Por favor ingrese algún texto");
+        return true;
+    }  
+}
+function mostrarMensajeOculto() {//reinicia el aspecto del área del mensaje encriptado o desencriptado
+    mensaje.value = "";
+    mensaje.style.backgroundImage = "url(imagenes/Muñeco.png)";
+    btnCopiar.style.visibility = "hidden";
+    mensajeOculto.style.visibility = "visible";
+    mensajeOculto2.style.visibility = "visible";
+}
+
+function ocultarMensaje (){
     textArea.value = "";
     mensajeOculto.style.visibility = "hidden";
     mensajeOculto2.style.visibility = "hidden";
     mensaje.style.backgroundImage = "none";
     btnCopiar.style.visibility = "visible";
-    
+}
+
+function btnEncriptar (){
+    if(!validarFormato()) {
+        const textoEncriptado = encriptar(textArea.value);
+        mensaje.value = textoEncriptado;
+        ocultarMensaje();
+    }
 }
 
 function encriptar(stringEncriptado){
@@ -35,9 +64,11 @@ function encriptar(stringEncriptado){
 }
 
 function btnDesncriptar (){
-    const textoDesencriptado = desencriptar(textArea.value);
-    mensaje.value = textoDesencriptado;
-    textArea.value = "";
+    if(!validarFormato()) {
+        const textoDesencriptado = desencriptar(textArea.value);
+        mensaje.value = textoDesencriptado;
+        ocultarMensaje();
+    }
 }
 
 function desencriptar(stringDesencriptado){
@@ -53,7 +84,9 @@ function desencriptar(stringDesencriptado){
 }
 
 function copiar (){
-        // Sleccionando el texto
+       
     mensaje.select();
-    //var copiado = document.ececComand
+    navigator.clipboard.writeText(mensaje.value);
+    mostrarMensajeOculto();
+    alert("Texto copiado y listo para usar");
 }

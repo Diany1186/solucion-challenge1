@@ -165,11 +165,11 @@ aside {
     display: table;
 }
 
-.pie-pagina{
+footer{
     position: absolute;
     bottom: 10px;
-    width: 100%;
-    display: block;
+    width: 90%;
+    display: inline;
     font-family: 'Inter';
     font-size: 15px;
     text-align: center;
