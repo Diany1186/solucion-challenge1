@@ -48,26 +48,33 @@ section {
 
 .s-botones {
     position: absolute;
-    bottom: 40px;
+    bottom: 20px;
     width: 50%px;
     margin: 0 auto;
 }
 .botones {
-   
     width: 220px;
     height: 67px;
     border: 1px solid #0A3871;
     border-radius: 24px;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     margin: 16px;
-    /* Dark blue/dark-blue-300 */
-
     color: #0A3871;
+    transition: 500ms all;
+    cursor: pointer;
+}
+
+.botones:hover {
+    background: #0A3871;
+    color: white;
+    border-radius: 24px;
+    transform: scale(1.05);
+    
 }
 
 .advertencia {
@@ -85,8 +92,8 @@ section {
 .informacion {
     display: inline-block;
     font-family: 'Inter';
-    font-weight: 400;
-    font-size: 12px;
+    font-weight: bold;
+    font-size: 15px;
     line-height: 150%;
     color: #495057;
     opacity: 0.8;
@@ -155,8 +162,8 @@ aside {
     display: block;
     visibility: hidden;
     background-color: white;
-    margin: 30px auto;
-}
+    margin: auto;
+ }
 
 footer{
     position: absolute;
@@ -166,7 +173,8 @@ footer{
     font-size: 15px;
     text-align: center;
     margin: 20px;
-    color: #495057
+    color: #495057;
+    font-weight: bold;
 }
 
 .pie-pagina {
